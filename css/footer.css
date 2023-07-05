@@ -1,0 +1,52 @@
+/* Estilos específicos para el footer */
+
+.footer {
+    /* Estilos para el contenedor del footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-footer);
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer__social {
+    /* Estilos para la sección de redes sociales en el footer */
+    display: flex;
+}
+
+.footer__midia {
+    /* Estilos para los íconos de redes sociales en el footer */
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 2rem 1rem;
+}
+
+.footer__navegacion {
+    /* Estilos para la sección de navegación en el footer */
+    color: var(--background-blanco);
+    font: var(--open-sans);
+    text-align: center;
+    line-height: 3;
+}
+
+.footer__enlace {
+    /* Estilos para los enlaces de navegación en el footer */
+    display: inline-block;
+    margin: 0 .5rem .7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para pantallas grandes en el footer */
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer__navegacion {
+        text-align: left;
+        min-width: 600px;
+    }
+}

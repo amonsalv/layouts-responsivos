@@ -1,0 +1,64 @@
+/* Estilos específicos para la sección de diferenciales */
+
+.diferenciales {
+    /* Estilos para el contenedor de diferenciales */
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.diferenciales__lista {
+    /* Estilos para la lista de diferenciales */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.diferenciales__item {
+    /* Estilos para cada ítem de diferenciales */
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 2rem 0 2rem 5rem;
+    background-repeat: no-repeat;
+    background-position: top 1.25rem left 2.5rem;
+}
+
+.item__titulo {
+    /* Estilos para el título de cada ítem de diferenciales */
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.item__texto {
+    /* Estilos para el texto de cada ítem de diferenciales */
+    line-height: normal;
+}
+
+.diferenciales__item-reloj {
+    /* Estilos específicos para el ítem de diferenciales con el icono de reloj */
+    background-image: url(../img/icono-reloj.png);
+}
+
+.diferenciales__item-dinero {
+    /* Estilos específicos para el ítem de diferenciales con el icono de dinero */
+    background-image: url(../img/icono-dinero.png);
+}
+
+.diferenciales__item-quimica {
+    /* Estilos específicos para el ítem de diferenciales con el icono de química */
+    background-image: url(../img/icono-quimica.png);
+}
+
+@media screen and (min-width: 1024px) {
+    .diferenciales {
+        /* Estilos para el contenedor de diferenciales en pantallas grandes */
+        background-color: var(--background-ceniza-claro);
+    }
+    
+    .diferenciales__lista {
+        /* Estilos para la lista de diferenciales en pantallas grandes */
+        justify-content: space-around;
+    }
+}

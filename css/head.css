@@ -1,36 +1,43 @@
+/* Estilos específicos para la cabecera (head) */
+
 .head {
-    color: #FFFFFF;
-
+    /* Estilos para el contenedor de la cabecera */
+    color: var(--background-blanco);
     width: 100%;
-
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding-top: .75rem;
     padding-bottom: .75rem;
-
-    border-bottom: 1px solid #103D4A;
-
+    border-bottom: 1px solid var(--border-cabecera-mobile);
     position: absolute;
 }
 
 .head__logo {
+    /* Estilos para el logotipo de la cabecera */
     margin-bottom: 1rem;
 }
 
 .head__navegacion {
+    /* Estilos para la sección de navegación en la cabecera */
     text-align: center;
 }
 
 .head__enlace {
+    /* Estilos para los enlaces de navegación en la cabecera */
     font-size: 1.1rem;
-
     display: inline-block;
-
     margin-right: .7rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: .7rem;
     margin-left: .7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para pantallas grandes en la cabecera */
+    .head {
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+    }
 }

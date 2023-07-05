@@ -1,33 +1,47 @@
+/* Estilos específicos para la sección llamada */
+
 .llamada  {
+    /* Estilos para el contenedor de la sección llamada */
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    color: #FFFFFF;
+    color: var(--background-blanco);
     text-align: center;
-    
-    background-color: #00161C;
-
+    background-color: var(--background-llamada-mobile);
     padding-top: 12.25rem;
     padding-bottom: 2.5rem;
 }
 
 .llamada__titulo {
-    font-family: 'Montserrat', serif;
+    /* Estilos para el título de la sección llamada */
+    font-family: var(--montserrat);
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-
     margin-bottom: 1.5rem;
 }
 
 .llamada__texto {
+    /* Estilos para el texto de la sección llamada */
     font-size: 1.25rem;
     line-height: normal;
-
     margin: 0 auto 2.5rem;
 }
 
 .llamada__boton {
+    /* Estilos para el botón de la sección llamada */
     width: 100%;
+}
+
+@media screen and (min-width: 1024px){
+    /* Estilos para pantallas grandes en la sección llamada */
+    .llamada {
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+        padding-top: 8.25rem;
+    }
+    .llamada__titulo {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+    }
 }

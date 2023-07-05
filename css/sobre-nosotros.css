@@ -1,0 +1,63 @@
+/* Estilos específicos para la sección "Sobre Nosotros" */
+
+.sobre_nosotros {
+    /* Estilos para el contenedor de la sección "Sobre Nosotros" */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sobre_nosotros__titulo {
+    /* Estilos para el título de la sección "Sobre Nosotros" */
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.sobre_nosotros__texto {
+    /* Estilos para el texto de la sección "Sobre Nosotros" */
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.sobre_nosotros__plataformas {
+    /* Estilos para las plataformas de la sección "Sobre Nosotros" */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.sobre-nosotros__texto--division {
+    /* Estilos para el texto de división en la sección "Sobre Nosotros" */
+    color: var(--fuente-ceniza-oscuro);
+    font-weight: 700;
+}
+
+.sobre_nosotros__imagen {
+    /* Estilos para la imagen de la sección "Sobre Nosotros" */
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para pantallas grandes en la sección "Sobre Nosotros" */
+    .sobre_nosotros {
+        display: flex;
+    }
+    .sobre_nosotros__contenido {
+        margin-right: 3rem;
+    }
+    .sobre_nosotros__titulo {
+        text-align: left;
+    }
+    .sobre-nosotros__texto--division {
+        border-bottom: 1px solid var(--background-ceniza-medio);
+        padding-bottom: 1.5rem;
+    }
+    .sobre_nosotros__imagen {
+        display: block;
+    }
+}
